@@ -1,0 +1,464 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		150D754829B211B60016F701 /* UnoriApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D754729B211B60016F701 /* UnoriApp.swift */; };
+		150D754C29B211B70016F701 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 150D754B29B211B70016F701 /* Assets.xcassets */; };
+		150D754F29B211B70016F701 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 150D754E29B211B70016F701 /* Preview Assets.xcassets */; };
+		150D755629B211C60016F701 /* signClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 150D755529B211C60016F701 /* signClassifier.mlmodel */; };
+		150D757729B212D80016F701 /* VideoProcessingChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D756C29B212D80016F701 /* VideoProcessingChain.swift */; };
+		150D757829B212D80016F701 /* PredictionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D756E29B212D80016F701 /* PredictionViewModel.swift */; };
+		150D757929B212D80016F701 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D757029B212D80016F701 /* ContentView.swift */; };
+		150D757B29B212D80016F701 /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D757329B212D80016F701 /* VideoCapture.swift */; };
+		150D757C29B212D80016F701 /* AVCaptureDeviceInput+Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D757429B212D80016F701 /* AVCaptureDeviceInput+Camera.swift */; };
+		150D757D29B212D80016F701 /* AVCaptureDevice+FrameRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D757529B212D80016F701 /* AVCaptureDevice+FrameRate.swift */; };
+		150D757E29B212D80016F701 /* AVCaptureVideoDataOutput+PixelFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D757629B212D80016F701 /* AVCaptureVideoDataOutput+PixelFormat.swift */; };
+		150D758B29B212E70016F701 /* ExerciseClassifier+FrameRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D758029B212E70016F701 /* ExerciseClassifier+FrameRate.swift */; };
+		150D758C29B212E70016F701 /* ExerciseClassifier+LabelCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D758129B212E70016F701 /* ExerciseClassifier+LabelCheck.swift */; };
+		150D758D29B212E70016F701 /* ActionPrediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D758229B212E70016F701 /* ActionPrediction.swift */; };
+		150D758E29B212E70016F701 /* ExerciseClassifier+Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D758329B212E70016F701 /* ExerciseClassifier+Label.swift */; };
+		150D758F29B212E70016F701 /* ExerciseClassifier+PredictAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D758429B212E70016F701 /* ExerciseClassifier+PredictAction.swift */; };
+		150D759029B212E70016F701 /* ExerciseClassifier+Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D758529B212E70016F701 /* ExerciseClassifier+Singleton.swift */; };
+		150D759129B212E70016F701 /* Pose+Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D758729B212E70016F701 /* Pose+Landmark.swift */; };
+		150D759229B212E70016F701 /* Pose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D758829B212E70016F701 /* Pose.swift */; };
+		150D759329B212E70016F701 /* Pose+Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D758929B212E70016F701 /* Pose+Connection.swift */; };
+		150D759429B212E70016F701 /* Pose+Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D758A29B212E70016F701 /* Pose+Empty.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		150D754429B211B60016F701 /* Unori.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Unori.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		150D754729B211B60016F701 /* UnoriApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnoriApp.swift; sourceTree = "<group>"; };
+		150D754B29B211B70016F701 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		150D754E29B211B70016F701 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		150D755529B211C60016F701 /* signClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = signClassifier.mlmodel; sourceTree = "<group>"; };
+		150D756C29B212D80016F701 /* VideoProcessingChain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoProcessingChain.swift; sourceTree = "<group>"; };
+		150D756E29B212D80016F701 /* PredictionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PredictionViewModel.swift; sourceTree = "<group>"; };
+		150D757029B212D80016F701 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		150D757329B212D80016F701 /* VideoCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
+		150D757429B212D80016F701 /* AVCaptureDeviceInput+Camera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVCaptureDeviceInput+Camera.swift"; sourceTree = "<group>"; };
+		150D757529B212D80016F701 /* AVCaptureDevice+FrameRate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVCaptureDevice+FrameRate.swift"; sourceTree = "<group>"; };
+		150D757629B212D80016F701 /* AVCaptureVideoDataOutput+PixelFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVCaptureVideoDataOutput+PixelFormat.swift"; sourceTree = "<group>"; };
+		150D758029B212E70016F701 /* ExerciseClassifier+FrameRate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExerciseClassifier+FrameRate.swift"; sourceTree = "<group>"; };
+		150D758129B212E70016F701 /* ExerciseClassifier+LabelCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExerciseClassifier+LabelCheck.swift"; sourceTree = "<group>"; };
+		150D758229B212E70016F701 /* ActionPrediction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionPrediction.swift; sourceTree = "<group>"; };
+		150D758329B212E70016F701 /* ExerciseClassifier+Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExerciseClassifier+Label.swift"; sourceTree = "<group>"; };
+		150D758429B212E70016F701 /* ExerciseClassifier+PredictAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExerciseClassifier+PredictAction.swift"; sourceTree = "<group>"; };
+		150D758529B212E70016F701 /* ExerciseClassifier+Singleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExerciseClassifier+Singleton.swift"; sourceTree = "<group>"; };
+		150D758729B212E70016F701 /* Pose+Landmark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Pose+Landmark.swift"; sourceTree = "<group>"; };
+		150D758829B212E70016F701 /* Pose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pose.swift; sourceTree = "<group>"; };
+		150D758929B212E70016F701 /* Pose+Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Pose+Connection.swift"; sourceTree = "<group>"; };
+		150D758A29B212E70016F701 /* Pose+Empty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Pose+Empty.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		150D754129B211B60016F701 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		150D753B29B211B60016F701 = {
+			isa = PBXGroup;
+			children = (
+				150D754629B211B60016F701 /* Unori */,
+				150D754529B211B60016F701 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		150D754529B211B60016F701 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				150D754429B211B60016F701 /* Unori.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		150D754629B211B60016F701 /* Unori */ = {
+			isa = PBXGroup;
+			children = (
+				150D755529B211C60016F701 /* signClassifier.mlmodel */,
+				150D754729B211B60016F701 /* UnoriApp.swift */,
+				150D757F29B212E70016F701 /* Action Classifier */,
+				150D758629B212E70016F701 /* Pose */,
+				150D757229B212D80016F701 /* Video Capture */,
+				150D756B29B212D80016F701 /* Video Processing Chain */,
+				150D756D29B212D80016F701 /* ViewModel */,
+				150D756F29B212D80016F701 /* Views */,
+				150D754B29B211B70016F701 /* Assets.xcassets */,
+				150D754D29B211B70016F701 /* Preview Content */,
+			);
+			path = Unori;
+			sourceTree = "<group>";
+		};
+		150D754D29B211B70016F701 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				150D754E29B211B70016F701 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		150D756B29B212D80016F701 /* Video Processing Chain */ = {
+			isa = PBXGroup;
+			children = (
+				150D756C29B212D80016F701 /* VideoProcessingChain.swift */,
+			);
+			path = "Video Processing Chain";
+			sourceTree = "<group>";
+		};
+		150D756D29B212D80016F701 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				150D756E29B212D80016F701 /* PredictionViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		150D756F29B212D80016F701 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				150D757029B212D80016F701 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		150D757229B212D80016F701 /* Video Capture */ = {
+			isa = PBXGroup;
+			children = (
+				150D757329B212D80016F701 /* VideoCapture.swift */,
+				150D757429B212D80016F701 /* AVCaptureDeviceInput+Camera.swift */,
+				150D757529B212D80016F701 /* AVCaptureDevice+FrameRate.swift */,
+				150D757629B212D80016F701 /* AVCaptureVideoDataOutput+PixelFormat.swift */,
+			);
+			path = "Video Capture";
+			sourceTree = "<group>";
+		};
+		150D757F29B212E70016F701 /* Action Classifier */ = {
+			isa = PBXGroup;
+			children = (
+				150D758029B212E70016F701 /* ExerciseClassifier+FrameRate.swift */,
+				150D758129B212E70016F701 /* ExerciseClassifier+LabelCheck.swift */,
+				150D758229B212E70016F701 /* ActionPrediction.swift */,
+				150D758329B212E70016F701 /* ExerciseClassifier+Label.swift */,
+				150D758429B212E70016F701 /* ExerciseClassifier+PredictAction.swift */,
+				150D758529B212E70016F701 /* ExerciseClassifier+Singleton.swift */,
+			);
+			path = "Action Classifier";
+			sourceTree = "<group>";
+		};
+		150D758629B212E70016F701 /* Pose */ = {
+			isa = PBXGroup;
+			children = (
+				150D758729B212E70016F701 /* Pose+Landmark.swift */,
+				150D758829B212E70016F701 /* Pose.swift */,
+				150D758929B212E70016F701 /* Pose+Connection.swift */,
+				150D758A29B212E70016F701 /* Pose+Empty.swift */,
+			);
+			path = Pose;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		150D754329B211B60016F701 /* Unori */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 150D755229B211B70016F701 /* Build configuration list for PBXNativeTarget "Unori" */;
+			buildPhases = (
+				150D754029B211B60016F701 /* Sources */,
+				150D754129B211B60016F701 /* Frameworks */,
+				150D754229B211B60016F701 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Unori;
+			productName = Unori;
+			productReference = 150D754429B211B60016F701 /* Unori.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		150D753C29B211B60016F701 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					150D754329B211B60016F701 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 150D753F29B211B60016F701 /* Build configuration list for PBXProject "Unori" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 150D753B29B211B60016F701;
+			productRefGroup = 150D754529B211B60016F701 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				150D754329B211B60016F701 /* Unori */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		150D754229B211B60016F701 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				150D754F29B211B70016F701 /* Preview Assets.xcassets in Resources */,
+				150D754C29B211B70016F701 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		150D754029B211B60016F701 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				150D759429B212E70016F701 /* Pose+Empty.swift in Sources */,
+				150D758D29B212E70016F701 /* ActionPrediction.swift in Sources */,
+				150D754829B211B60016F701 /* UnoriApp.swift in Sources */,
+				150D757C29B212D80016F701 /* AVCaptureDeviceInput+Camera.swift in Sources */,
+				150D757D29B212D80016F701 /* AVCaptureDevice+FrameRate.swift in Sources */,
+				150D757B29B212D80016F701 /* VideoCapture.swift in Sources */,
+				150D757929B212D80016F701 /* ContentView.swift in Sources */,
+				150D759229B212E70016F701 /* Pose.swift in Sources */,
+				150D758F29B212E70016F701 /* ExerciseClassifier+PredictAction.swift in Sources */,
+				150D759329B212E70016F701 /* Pose+Connection.swift in Sources */,
+				150D759029B212E70016F701 /* ExerciseClassifier+Singleton.swift in Sources */,
+				150D758B29B212E70016F701 /* ExerciseClassifier+FrameRate.swift in Sources */,
+				150D757E29B212D80016F701 /* AVCaptureVideoDataOutput+PixelFormat.swift in Sources */,
+				150D758C29B212E70016F701 /* ExerciseClassifier+LabelCheck.swift in Sources */,
+				150D757829B212D80016F701 /* PredictionViewModel.swift in Sources */,
+				150D759129B212E70016F701 /* Pose+Landmark.swift in Sources */,
+				150D757729B212D80016F701 /* VideoProcessingChain.swift in Sources */,
+				150D755629B211C60016F701 /* signClassifier.mlmodel in Sources */,
+				150D758E29B212E70016F701 /* ExerciseClassifier+Label.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		150D755029B211B70016F701 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		150D755129B211B70016F701 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		150D755329B211B70016F701 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Unori/Preview Content\"";
+				DEVELOPMENT_TEAM = 5UR998JK72;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "The app would like to access your camera to analyze its content for action recognition.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Challenge.Unori;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		150D755429B211B70016F701 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Unori/Preview Content\"";
+				DEVELOPMENT_TEAM = 5UR998JK72;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "The app would like to access your camera to analyze its content for action recognition.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Challenge.Unori;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		150D753F29B211B60016F701 /* Build configuration list for PBXProject "Unori" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				150D755029B211B70016F701 /* Debug */,
+				150D755129B211B70016F701 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		150D755229B211B70016F701 /* Build configuration list for PBXNativeTarget "Unori" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				150D755329B211B70016F701 /* Debug */,
+				150D755429B211B70016F701 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 150D753C29B211B60016F701 /* Project object */;
+}
