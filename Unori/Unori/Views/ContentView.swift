@@ -12,25 +12,25 @@ struct ContentView: View {
     
     @ObservedObject var predictionVM = PredictionViewModel()
     
-    var switchCamera: some View {
-        HStack {
-            Button {
-                predictionVM.videoCapture.toggleCameraSelection()
-            } label: {
-                Image(systemName: "arrow.triangle.2.circlepath.camera.fill")
-                    .imageScale(.large)
-                    .foregroundColor(.accentColor)
-            }
-            .padding(.leading)
-            
-            Spacer()
-        }
-    }
+//    var switchCamera: some View {
+//        HStack {
+//            Button {
+//                predictionVM.videoCapture.toggleCameraSelection()
+//            } label: {
+//                Image(systemName: "arrow.triangle.2.circlepath.camera.fill")
+//                    .imageScale(.large)
+//                    .foregroundColor(.accentColor)
+//            }
+//            .padding(.leading)
+//
+//            Spacer()
+//        }
+//    }
     
     var predictionLabels: some View {
         VStack {
-            switchCamera
-            Spacer()
+            //switchCamera
+            //Spacer()
             Text("Prediction: \(predictionVM.predicted)")
                 .foregroundColor(.white)
                 .background(Rectangle().foregroundColor(.black))
@@ -47,7 +47,6 @@ struct ContentView: View {
             
             predictionLabels
         }
-        .padding()
         .onAppear{
             predictionVM.updateUILabels(with: .startingPrediction)
         }

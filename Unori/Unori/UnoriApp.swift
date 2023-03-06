@@ -11,11 +11,12 @@ import SwiftUI
 struct UnoriApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .onAppear{
-                    // Disable the idle timer to prevent the screen from locking.
-                    UIApplication.shared.isIdleTimerDisabled = true
-                }
+//            ContentView()
+//                .onAppear{
+//                    // Disable the idle timer to prevent the screen from locking.
+//                    UIApplication.shared.isIdleTimerDisabled = true
+//                }
+            MainView()
         }
     }
 }
