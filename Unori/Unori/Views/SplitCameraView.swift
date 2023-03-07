@@ -34,10 +34,13 @@ struct TutorialView: View {
 struct SplitCameraView: View {
     var body: some View {
         GeometryReader { reader in
-            HStack{
-                TutorialView()
-                CameraView()
-            }.frame(width: reader.size.width, height: reader.size.height)
+            
+            ZStack {
+                HStack{
+                    TutorialView()
+                    CameraView()
+                }.frame(width: reader.size.width, height: reader.size.height)
+            }
         }
     }
 }

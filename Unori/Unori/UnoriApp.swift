@@ -17,7 +17,7 @@ struct UnoriApp: App {
 //                    UIApplication.shared.isIdleTimerDisabled = true
 //                }
             SplitCameraView()
-           // MainView()
+            //MainView()
         }
     }
 }
