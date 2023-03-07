@@ -46,3 +46,9 @@ class LoopingPlayerUIView: UIView {
         playerLayer.frame = bounds
     }
 }
+
+struct Tutorial_Previews: PreviewProvider {
+    static var previews: some View {
+        TutorialView()
+    }
+}

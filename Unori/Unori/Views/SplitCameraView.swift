@@ -13,7 +13,7 @@ struct SplitCameraView: View {
             
             ZStack {
                 HStack{
-                    TutorialView()
+                    TutorialView_Bounds()
                     CameraView()
                 }.frame(width: reader.size.width, height: reader.size.height)
             }
