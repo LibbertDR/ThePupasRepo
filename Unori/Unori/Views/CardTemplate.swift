@@ -11,7 +11,7 @@ struct CardTemplate: View {
     
     var minWidth: CGFloat = 158
     var maxWidth: CGFloat = 199
-    var word: Word = Word(name: "Placeholder", image: "Home", isFavourite: false)
+    var word: ListItem = ListItem(name: "Placeholder", icon: "Placeholder")
     
     var body: some View {
         
@@ -27,12 +27,14 @@ struct CardTemplate: View {
                 VStack{
                     ZStack{
                         
-                        Image(word.image)
+                        Image(word.icon)
                             .resizable()
                             .frame(width: reader.frame(in: .named("Rettangolo")).width * 1/9, height: reader.frame(in: .named("Rettangolo")).height * 1/8)
                         
                         
-                        Image(systemName: word.isFavourite ? "heart.fill" : "heart")
+                        Image(systemName:
+//                                word.isFavourite ? "heart.fill" :
+                                "heart")
                             .foregroundColor(Color("AccentColor"))
                             .frame(maxWidth: .infinity, alignment: .trailing)
                             .padding(.bottom, 110)
