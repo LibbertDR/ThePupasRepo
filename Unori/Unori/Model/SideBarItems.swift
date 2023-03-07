@@ -12,16 +12,16 @@ struct SideBarItems{
         
         //Categories
         let categories = [
-            ListItem(name: "Action", icon: "figure.run"),
-            ListItem(name: "Animals", icon: "pawprint.fill"),
+ //           ListItem(name: "Action", icon: "figure.run"),
+            ListItem(name: "Animals", icon: "pawprint.fill",itemChildren: animalsItem),
             ListItem(name: "Home", icon: "house.fill", itemChildren: homeItems)
             
         ]
         
-        //Items into sidebar
-        let items = [
-            ListItem(name: "My journey", icon: "graduationcap.fill", itemChildren: categories)
-        ]
+//        //Items into sidebar
+//        let items = [
+//            ListItem(name: "My journey", icon: "graduationcap.fill", itemChildren: categories)
+//        ]
         
 
         return categories

@@ -25,15 +25,16 @@ struct MainView: View {
             if let selectedCategoryId,
                let categoryItems = dataModel.fetchSubMenuItems(for: selectedCategoryId) {
                 NavigationStack{
-                    List(categoryItems) { item in
-                        NavigationLink(destination: SplitCameraView()){
-                            Label(item.name, systemImage: item.icon)
-                        }
-                        
-                        
-                    }
-                    .listStyle(.plain)
-                    .navigationBarTitleDisplayMode(.inline)
+//                    List(categoryItems) { item in
+//                        NavigationLink(destination: SplitCameraView()){
+//                            Label(item.name, systemImage: item.icon)
+//                        }
+//
+//
+//                    }
+//                    .listStyle(.plain)
+//                    .navigationBarTitleDisplayMode(.inline)
+                    DetailView(cards: categoryItems)
                 }
              
                         } else {
