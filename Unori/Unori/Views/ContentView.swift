@@ -43,7 +43,6 @@ struct ContentView: View {
         ZStack {
             Image(uiImage: predictionVM.currentFrame ?? UIImage())
                 .resizable()
-                .scaledToFill()
             
             predictionLabels
         }

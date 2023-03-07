@@ -18,16 +18,17 @@
 		150D757C29B212D80016F701 /* AVCaptureDeviceInput+Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D757429B212D80016F701 /* AVCaptureDeviceInput+Camera.swift */; };
 		150D757D29B212D80016F701 /* AVCaptureDevice+FrameRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D757529B212D80016F701 /* AVCaptureDevice+FrameRate.swift */; };
 		150D757E29B212D80016F701 /* AVCaptureVideoDataOutput+PixelFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D757629B212D80016F701 /* AVCaptureVideoDataOutput+PixelFormat.swift */; };
-		150D758B29B212E70016F701 /* ExerciseClassifier+FrameRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D758029B212E70016F701 /* ExerciseClassifier+FrameRate.swift */; };
-		150D758C29B212E70016F701 /* ExerciseClassifier+LabelCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D758129B212E70016F701 /* ExerciseClassifier+LabelCheck.swift */; };
+		150D758B29B212E70016F701 /* SignClassifier+FrameRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D758029B212E70016F701 /* SignClassifier+FrameRate.swift */; };
+		150D758C29B212E70016F701 /* SignClassifier+LabelCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D758129B212E70016F701 /* SignClassifier+LabelCheck.swift */; };
 		150D758D29B212E70016F701 /* ActionPrediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D758229B212E70016F701 /* ActionPrediction.swift */; };
-		150D758E29B212E70016F701 /* ExerciseClassifier+Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D758329B212E70016F701 /* ExerciseClassifier+Label.swift */; };
-		150D758F29B212E70016F701 /* ExerciseClassifier+PredictAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D758429B212E70016F701 /* ExerciseClassifier+PredictAction.swift */; };
-		150D759029B212E70016F701 /* ExerciseClassifier+Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D758529B212E70016F701 /* ExerciseClassifier+Singleton.swift */; };
+		150D758E29B212E70016F701 /* SignClassifier+Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D758329B212E70016F701 /* SignClassifier+Label.swift */; };
+		150D758F29B212E70016F701 /* SignClassifier+PredictAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D758429B212E70016F701 /* SignClassifier+PredictAction.swift */; };
+		150D759029B212E70016F701 /* SignClassifier+Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D758529B212E70016F701 /* SignClassifier+Singleton.swift */; };
 		150D759129B212E70016F701 /* Pose+Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D758729B212E70016F701 /* Pose+Landmark.swift */; };
 		150D759229B212E70016F701 /* Pose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D758829B212E70016F701 /* Pose.swift */; };
 		150D759329B212E70016F701 /* Pose+Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D758929B212E70016F701 /* Pose+Connection.swift */; };
 		150D759429B212E70016F701 /* Pose+Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D758A29B212E70016F701 /* Pose+Empty.swift */; };
+		258D42A529B5F34600C95500 /* SplitCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258D42A429B5F34600C95500 /* SplitCameraView.swift */; };
 		25E9092629B51321008A1C18 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E9092529B51321008A1C18 /* ListItem.swift */; };
 		25E9092929B51872008A1C18 /* SideBarItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E9092829B51872008A1C18 /* SideBarItems.swift */; };
 		25E9092B29B51B0E008A1C18 /* CategoryItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E9092A29B51B0E008A1C18 /* CategoryItems.swift */; };
@@ -47,16 +48,17 @@
 		150D757429B212D80016F701 /* AVCaptureDeviceInput+Camera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVCaptureDeviceInput+Camera.swift"; sourceTree = "<group>"; };
 		150D757529B212D80016F701 /* AVCaptureDevice+FrameRate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVCaptureDevice+FrameRate.swift"; sourceTree = "<group>"; };
 		150D757629B212D80016F701 /* AVCaptureVideoDataOutput+PixelFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVCaptureVideoDataOutput+PixelFormat.swift"; sourceTree = "<group>"; };
-		150D758029B212E70016F701 /* ExerciseClassifier+FrameRate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExerciseClassifier+FrameRate.swift"; sourceTree = "<group>"; };
-		150D758129B212E70016F701 /* ExerciseClassifier+LabelCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExerciseClassifier+LabelCheck.swift"; sourceTree = "<group>"; };
+		150D758029B212E70016F701 /* SignClassifier+FrameRate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SignClassifier+FrameRate.swift"; sourceTree = "<group>"; };
+		150D758129B212E70016F701 /* SignClassifier+LabelCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SignClassifier+LabelCheck.swift"; sourceTree = "<group>"; };
 		150D758229B212E70016F701 /* ActionPrediction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionPrediction.swift; sourceTree = "<group>"; };
-		150D758329B212E70016F701 /* ExerciseClassifier+Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExerciseClassifier+Label.swift"; sourceTree = "<group>"; };
-		150D758429B212E70016F701 /* ExerciseClassifier+PredictAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExerciseClassifier+PredictAction.swift"; sourceTree = "<group>"; };
-		150D758529B212E70016F701 /* ExerciseClassifier+Singleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExerciseClassifier+Singleton.swift"; sourceTree = "<group>"; };
+		150D758329B212E70016F701 /* SignClassifier+Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SignClassifier+Label.swift"; sourceTree = "<group>"; };
+		150D758429B212E70016F701 /* SignClassifier+PredictAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SignClassifier+PredictAction.swift"; sourceTree = "<group>"; };
+		150D758529B212E70016F701 /* SignClassifier+Singleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SignClassifier+Singleton.swift"; sourceTree = "<group>"; };
 		150D758729B212E70016F701 /* Pose+Landmark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Pose+Landmark.swift"; sourceTree = "<group>"; };
 		150D758829B212E70016F701 /* Pose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pose.swift; sourceTree = "<group>"; };
 		150D758929B212E70016F701 /* Pose+Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Pose+Connection.swift"; sourceTree = "<group>"; };
 		150D758A29B212E70016F701 /* Pose+Empty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Pose+Empty.swift"; sourceTree = "<group>"; };
+		258D42A429B5F34600C95500 /* SplitCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitCameraView.swift; sourceTree = "<group>"; };
 		25E9092529B51321008A1C18 /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
 		25E9092829B51872008A1C18 /* SideBarItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarItems.swift; sourceTree = "<group>"; };
 		25E9092A29B51B0E008A1C18 /* CategoryItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItems.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 			children = (
 				150D757029B212D80016F701 /* ContentView.swift */,
 				25E9092C29B521E9008A1C18 /* MainView.swift */,
+				258D42A429B5F34600C95500 /* SplitCameraView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -156,12 +159,12 @@
 		150D757F29B212E70016F701 /* Action Classifier */ = {
 			isa = PBXGroup;
 			children = (
-				150D758029B212E70016F701 /* ExerciseClassifier+FrameRate.swift */,
-				150D758129B212E70016F701 /* ExerciseClassifier+LabelCheck.swift */,
+				150D758029B212E70016F701 /* SignClassifier+FrameRate.swift */,
+				150D758129B212E70016F701 /* SignClassifier+LabelCheck.swift */,
 				150D758229B212E70016F701 /* ActionPrediction.swift */,
-				150D758329B212E70016F701 /* ExerciseClassifier+Label.swift */,
-				150D758429B212E70016F701 /* ExerciseClassifier+PredictAction.swift */,
-				150D758529B212E70016F701 /* ExerciseClassifier+Singleton.swift */,
+				150D758329B212E70016F701 /* SignClassifier+Label.swift */,
+				150D758429B212E70016F701 /* SignClassifier+PredictAction.swift */,
+				150D758529B212E70016F701 /* SignClassifier+Singleton.swift */,
 			);
 			path = "Action Classifier";
 			sourceTree = "<group>";
@@ -264,21 +267,22 @@
 				150D757B29B212D80016F701 /* VideoCapture.swift in Sources */,
 				150D757929B212D80016F701 /* ContentView.swift in Sources */,
 				150D759229B212E70016F701 /* Pose.swift in Sources */,
+				258D42A529B5F34600C95500 /* SplitCameraView.swift in Sources */,
 				25E9092929B51872008A1C18 /* SideBarItems.swift in Sources */,
-				150D758F29B212E70016F701 /* ExerciseClassifier+PredictAction.swift in Sources */,
+				150D758F29B212E70016F701 /* SignClassifier+PredictAction.swift in Sources */,
 				150D759329B212E70016F701 /* Pose+Connection.swift in Sources */,
 				25E9092629B51321008A1C18 /* ListItem.swift in Sources */,
-				150D759029B212E70016F701 /* ExerciseClassifier+Singleton.swift in Sources */,
-				150D758B29B212E70016F701 /* ExerciseClassifier+FrameRate.swift in Sources */,
+				150D759029B212E70016F701 /* SignClassifier+Singleton.swift in Sources */,
+				150D758B29B212E70016F701 /* SignClassifier+FrameRate.swift in Sources */,
 				150D757E29B212D80016F701 /* AVCaptureVideoDataOutput+PixelFormat.swift in Sources */,
-				150D758C29B212E70016F701 /* ExerciseClassifier+LabelCheck.swift in Sources */,
+				150D758C29B212E70016F701 /* SignClassifier+LabelCheck.swift in Sources */,
 				150D757829B212D80016F701 /* PredictionViewModel.swift in Sources */,
 				150D759129B212E70016F701 /* Pose+Landmark.swift in Sources */,
 				150D757729B212D80016F701 /* VideoProcessingChain.swift in Sources */,
 				25E9092D29B521E9008A1C18 /* MainView.swift in Sources */,
 				150D755629B211C60016F701 /* signClassifier.mlmodel in Sources */,
 				25E9092B29B51B0E008A1C18 /* CategoryItems.swift in Sources */,
-				150D758E29B212E70016F701 /* ExerciseClassifier+Label.swift in Sources */,
+				150D758E29B212E70016F701 /* SignClassifier+Label.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,8 +420,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,8 +456,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
