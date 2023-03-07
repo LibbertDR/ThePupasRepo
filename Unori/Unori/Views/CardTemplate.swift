@@ -25,20 +25,28 @@ struct CardTemplate: View {
                     .shadow(radius: 20)
                 
                 VStack{
-        
-                    Image(word.image)
-                        .resizable()
-                        .frame(width: reader.frame(in: .named("Rettangolo")).width * 1/9, height: reader.frame(in: .named("Rettangolo")).height * 1/8)
+                    ZStack{
+                        
+                        Image(word.image)
+                            .resizable()
+                            .frame(width: reader.frame(in: .named("Rettangolo")).width * 1/9, height: reader.frame(in: .named("Rettangolo")).height * 1/8)
+                        
+                        
+                        Image(systemName: word.isFavourite ? "heart.fill" : "heart")
+                            .foregroundColor(Color("AccentColor"))
+                            .frame(maxWidth: .infinity, alignment: .trailing)
+                            .padding(.bottom, 110)
+                            .padding(.trailing, 18)
+                        
+                    }
                     
                     Text(word.name)
-                        .foregroundColor(Color("PrimaryColor"))
+                        .foregroundColor(Color("AccentColor"))
                         .fontWeight(.medium)
                         .padding(.bottom, 5)
                 }
-                
-                Image(systemName: word.isFavourite ? "heart.fill" : "heart")
-                    .foregroundColor(Color("PrimaryColor"))
-                
+               
+                    
                 
                 
             }.frame(minWidth: minWidth, maxWidth: maxWidth, minHeight: minWidth, maxHeight: maxWidth)
