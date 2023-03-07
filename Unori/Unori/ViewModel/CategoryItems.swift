@@ -25,7 +25,8 @@ let animalsItem = [
     ListItem(name: "Frog", icon: "rana"),
     ListItem(name: "Kangaroo", icon: "canguro"),
     ListItem(name: "Rabbit", icon: "coniglio"),
-    ListItem(name: "Squirrel", icon: "scoiattolo")
-   
+    ListItem(name: "Squirrel", icon: "scoiattolo"),
+    ListItem(name: "Home", icon: "home")
+
     
 ]

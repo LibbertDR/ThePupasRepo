@@ -120,8 +120,10 @@ class VideoCapture: NSObject {
     }
 
     private func enableCaptureSession() {
-        if !captureSession.isRunning { captureSession.startRunning() }
-    }
+            DispatchQueue.global(qos: .background).async{ //thread background
+                if !self.captureSession.isRunning { self.captureSession.startRunning() }
+            }
+        }
 
     private func disableCaptureSession() {
         if captureSession.isRunning { captureSession.stopRunning() }

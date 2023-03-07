@@ -16,8 +16,8 @@ struct CardTemplate: View {
     var body: some View {
         
         GeometryReader { reader in
+            
             ZStack{
-                
                 
                 Rectangle()
                     .foregroundColor(.white)

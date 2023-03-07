@@ -8,10 +8,24 @@
 import SwiftUI
 
 struct AnimalsView: View {
+    
+    let colums = [
+        GridItem(.flexible()),
+        GridItem(.flexible()),
+        GridItem(.flexible()),
+        GridItem(.flexible())
+    ]
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        LazyVGrid(columns: colums, spacing: 44) {
+            
+            ForEach( animalsItem, id: \.self){ item in
+                CardTemplate2(word: item)                    
+            }
+        }
     }
 }
+
 
 struct AnimalsView_Previews: PreviewProvider {
     static var previews: some View {
