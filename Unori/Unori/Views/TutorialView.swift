@@ -29,7 +29,7 @@ class LoopingPlayerUIView: UIView {
         let item = AVPlayerItem(asset: asset)
         
         // Setup the player
-        let player = AVQueuePlayer()
+        //var player = AVQueuePlayer()
         playerLayer.player = player
         playerLayer.videoGravity = .resizeAspectFill
         layer.addSublayer(playerLayer)
@@ -39,13 +39,18 @@ class LoopingPlayerUIView: UIView {
 
         // Start the movie
         player.play()
+        player.rate = 1
+
     }
+    
 
     override func layoutSubviews() {
         super.layoutSubviews()
         playerLayer.frame = bounds
     }
 }
+var player = AVQueuePlayer()
+
 
 struct Tutorial_Previews: PreviewProvider {
     static var previews: some View {

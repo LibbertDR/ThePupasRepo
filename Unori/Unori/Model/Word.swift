@@ -12,5 +12,5 @@ struct Word: Identifiable {
     var id = UUID()
     var name: String
     var image: String
-    var isFavourite: Bool
+    //var isFavourite: Bool
 }

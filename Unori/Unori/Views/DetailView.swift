@@ -21,7 +21,7 @@ struct DetailView: View {
             LazyVGrid(columns: colums, spacing: 44) {
                 
                 ForEach( cards, id: \.self){ item in
-                    NavigationLink(destination: SplitCameraView()){
+                    NavigationLink(destination: CardView_SplitCameraView(chosenWord: item)){
                         CardTemplate(word: item)
                     }
                 }

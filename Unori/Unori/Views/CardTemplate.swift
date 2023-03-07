@@ -44,12 +44,12 @@ struct CardTemplate: View {
             }
             
             
-            Image(systemName:
-                    "heart")
-            .foregroundColor(Color("AccentColor"))
-            .frame(maxWidth: .infinity, alignment: .trailing)
-            .padding(.bottom, 110)
-            .padding(.trailing, 18)
+//            Image(systemName:
+//                    "heart")
+//            .foregroundColor(Color("AccentColor"))
+//            .frame(maxWidth: .infinity, alignment: .trailing)
+//            .padding(.bottom, 110)
+//            .padding(.trailing, 18)
             
         }
         .aspectRatio(1, contentMode: .fill)
@@ -59,7 +59,7 @@ struct CardTemplate: View {
 }
 
 
-struct CardTemplate2_Previews: PreviewProvider {
+struct CardTemplate_Previews: PreviewProvider {
     static var previews: some View {
         CardTemplate()
     }
