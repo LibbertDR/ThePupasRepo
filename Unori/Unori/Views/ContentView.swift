@@ -41,10 +41,15 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-            Image(uiImage: predictionVM.currentFrame ?? UIImage())
-                .resizable()
-            
-            predictionLabels
+            GeometryReader{ reader in
+                Image(uiImage: predictionVM.currentFrame ?? UIImage())
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: reader.size.width,
+                    height: reader.size.height)
+                    .clipped() //To clip the image content within its view's bounds
+                predictionLabels
+            }
         }
         .onAppear{
             predictionVM.updateUILabels(with: .startingPrediction)

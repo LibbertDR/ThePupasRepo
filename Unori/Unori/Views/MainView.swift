@@ -26,7 +26,7 @@ struct MainView: View {
                let categoryItems = dataModel.fetchSubMenuItems(for: selectedCategoryId) {
                 NavigationStack{
                     List(categoryItems) { item in
-                        NavigationLink(destination: ContentView()){
+                        NavigationLink(destination: SplitCameraView()){
                             Label(item.name, systemImage: item.icon)
                         }
                         
