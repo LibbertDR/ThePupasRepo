@@ -16,8 +16,7 @@ struct UnoriApp: App {
 //                    // Disable the idle timer to prevent the screen from locking.
 //                    UIApplication.shared.isIdleTimerDisabled = true
 //                }
-            SplitCameraView()
-            //MainView()
+            MainView()
         }
     }
 }
