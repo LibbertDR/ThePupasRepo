@@ -53,7 +53,7 @@ class VideoCapture: NSObject {
     }
 
     /// The camera orientation the app uses to configure the capture session.
-    private var orientation = AVCaptureVideoOrientation.portrait {
+    private var orientation = AVCaptureVideoOrientation.landscapeRight {
         didSet { createVideoFramePublisher() }
     }
 
@@ -106,9 +106,11 @@ class VideoCapture: NSObject {
             orientation = .landscapeRight
         case .portraitUpsideDown:
             orientation = .landscapeLeft
+
         case .landscapeLeft:
             // UIKit's "left" is the equivalent to AVFoundation's "right."
             orientation = .landscapeRight
+
         case .landscapeRight:
             // UIKit's "right" is the equivalent to AVFoundation's "left."
             orientation = .landscapeLeft
@@ -116,6 +118,7 @@ class VideoCapture: NSObject {
         // Use portrait as the default for any future, unknown cases.
         @unknown default:
             orientation = .landscapeRight
+
         }
     }
 
