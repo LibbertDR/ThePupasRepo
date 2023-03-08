@@ -25,5 +25,5 @@
 "Rabbit" = "Coelho";
 "Kangaroo" = "Canguru";
 
-"Slow" = "Devagar";
-"Normal" = "Normal";
+"0.5x\n Slow" = "0.5x\n Devagar";
+"1x\n Normal" = "1x\n Normal";

@@ -27,5 +27,9 @@
 "Rabbit" = "Rabbit";
 "Kangaroo" = "Kangaroo";
 
-"Slow" = "Slow";
-"Normal" = "Normal";
+"0.5x\n Slow" = "0.5x\n Slow";
+"1x\n Normal" = "1x\n Normal";
+
+
+//ACTION PREDICTION
+"Frame the whole body" = "Frame the whole body";

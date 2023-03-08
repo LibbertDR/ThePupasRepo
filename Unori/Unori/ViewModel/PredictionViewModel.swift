@@ -14,6 +14,7 @@ class PredictionViewModel: ObservableObject {
     @Published var currentFrame: UIImage?
     @Published var predicted: String = ""
     @Published var confidence: String = ""
+    @Published var score: String = ""
     
     /// Captures the frames from the camera and creates a frame publisher.
     var videoCapture: VideoCapture!
@@ -52,6 +53,8 @@ class PredictionViewModel: ObservableObject {
         // Update the UI's confidence label on the main thread.
         let confidenceString = prediction.confidenceString ?? "Observing..."
         DispatchQueue.main.async { self.confidence = confidenceString }
+        
+        DispatchQueue.main.async { self.score = prediction.score }
     }
     
     /// Add the incremental duration to an action's total time.

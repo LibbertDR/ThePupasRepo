@@ -9,8 +9,8 @@ import SwiftUI
 
 struct CardView_SplitCameraView: View {
     var chosenWord: ListItem
-    @State var isNormalSpeed = false
-    @State var text : LocalizedStringKey = "Slow"
+    @State var isNormalSpeed = true
+    @State var text : LocalizedStringKey = "1x\n Normal"
     var body: some View {
         HStack{
             VStack {
@@ -19,13 +19,13 @@ struct CardView_SplitCameraView: View {
                 Spacer()
                 Button {
                     if(isNormalSpeed){
-                        text = "Normal"
+                        text = "0.5x\n Slow"
                         isNormalSpeed = false
                         player.play()
                         player.rate = 0.5
                     }
                     else{
-                        text = "Slow"
+                        text = "1x\n Normal"
                         isNormalSpeed = true
                         player.play()
                         player.rate = 1
@@ -33,15 +33,16 @@ struct CardView_SplitCameraView: View {
                     }
                 } label: {
                     Text(text)
-                        .padding()
+                        .padding(30)
                         .foregroundColor(Color("AccentColor"))
                         .background(
                             RoundedRectangle(
-                                cornerRadius: 20,
+                                cornerRadius: 40,
                                 style: .continuous)
                             .stroke(Color("AccentColor"), lineWidth: 2)
 
                         )
+                        .shadow(radius: 40)
                 }
                 Spacer()
                 Spacer()

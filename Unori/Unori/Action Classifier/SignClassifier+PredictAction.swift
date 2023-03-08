@@ -18,8 +18,12 @@ extension signClassifier {
             let output = try prediction(poses: window)
             let action = Label(output.label)
             let confidence = output.labelProbabilities[output.label]!
-
-            return ActionPrediction(label: action.rawValue, confidence: confidence)
+            
+            if (action.rawValue=="casaUSA"){
+                return ActionPrediction(label: action.rawValue, confidence: confidence, score: "Well done")
+            }else{
+                return ActionPrediction(label: action.rawValue, confidence: confidence, score: "")
+            }
 
         } catch {
             fatalError("Sign Classifier prediction error: \(error)")

@@ -14,6 +14,7 @@ struct SplitCameraView: View {
             HStack(spacing: 3){
                     TutorialView_Bounds()
                     CameraView()
+                Spacer()
                 }.frame(width: reader.size.width, height: reader.size.height)
             
         }

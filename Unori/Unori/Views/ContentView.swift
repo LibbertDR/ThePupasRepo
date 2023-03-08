@@ -31,11 +31,16 @@ struct ContentView: View {
         VStack {
             //switchCamera
             //Spacer()
-            Text("Prediction: \(predictionVM.predicted)")
-                .foregroundColor(.white)
-                .background(Rectangle().foregroundColor(.black))
-            Text("Confidence: \(predictionVM.confidence)").foregroundColor(.white)
-                .background(Rectangle().foregroundColor(.black))
+//            Text("Prediction: \(predictionVM.predicted)")
+//                .foregroundColor(.white)
+//                .background(Rectangle().foregroundColor(.black))
+            GeometryReader { reader in
+                Text((predictionVM.score)).foregroundColor(.white)
+                    .background(Rectangle().foregroundColor(.black))
+                    .position(x: reader.size.width/2,
+                              y: reader.size.height/1.2)
+                    .font(.system(size: 32))
+            }
         }
     }
     

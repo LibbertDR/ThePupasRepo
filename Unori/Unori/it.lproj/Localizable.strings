@@ -26,5 +26,10 @@
 "Rabbit" = "Coniglio";
 "Kangaroo" = "Canguro";
 
-"Slow" = "Rallentato";
-"Normal" = "Normale";
+"0.5x\n Slow" = "0.5x\n Rallentato";
+"1x\n Normal" = "1x\n Normale";
+
+
+//ACTION PREDICTION
+"Frame the whole body" = "Inquadra tutto il corpo";
+

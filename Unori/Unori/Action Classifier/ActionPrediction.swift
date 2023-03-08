@@ -16,6 +16,7 @@ struct ActionPrediction {
 
     /// The Exercise Classifier's confidence in its prediction.
     let confidence: Double!
+    let score: String
 
     /// A string that represents the confidence as percentage if applicable;
     /// otherwise `nil`.
@@ -30,9 +31,10 @@ struct ActionPrediction {
         return String(format: formatString, percent)
     }
 
-    init(label: String, confidence: Double) {
+    init(label: String, confidence: Double, score: String) {
         self.label = label
         self.confidence = confidence
+        self.score = score
     }
 }
 
@@ -42,7 +44,7 @@ extension ActionPrediction {
     private enum AppLabel: String {
         case starting = "Starting Up"
         case noPerson = "Frame the whole body"
-        case lowConfidence = "Low Confidence"
+        case lowConfidence = ""
     }
 
     /// A prediction that represents a time window that doesn't contain
@@ -66,6 +68,7 @@ extension ActionPrediction {
     private init(_ otherLabel: AppLabel) {
         label = otherLabel.rawValue
         confidence = nil
+        score = ""
     }
 
     /// A Boolean that indicates whether the label is from the action classifier model.
