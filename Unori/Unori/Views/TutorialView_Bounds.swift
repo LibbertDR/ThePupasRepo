@@ -13,8 +13,9 @@ struct TutorialView_Bounds: View {
                 TutorialView()
                     .position(x: reader.size.width/2, y:reader.size.height/2)
                     .overlay(
-                        Rectangle()
-                            .stroke(.black, lineWidth: 8))
+                        RoundedRectangle(cornerRadius: 40)
+                            .stroke(Color("AccentColor"), lineWidth: 3)
+                    )
             }
         }
     }

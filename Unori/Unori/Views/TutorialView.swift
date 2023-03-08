@@ -15,6 +15,7 @@ struct TutorialView: UIViewRepresentable {
 class LoopingPlayerUIView: UIView {
     private let playerLayer = AVPlayerLayer()
     private var playerLooper: AVPlayerLooper?
+    var videoController:AVPlayerViewController!
 
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -22,7 +23,7 @@ class LoopingPlayerUIView: UIView {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-
+        
         // Load the resource
         let fileUrl = Bundle.main.url(forResource: "casa", withExtension: "mov")!
         let asset = AVAsset(url: fileUrl)
@@ -32,7 +33,11 @@ class LoopingPlayerUIView: UIView {
         //var player = AVQueuePlayer()
         playerLayer.player = player
         playerLayer.videoGravity = .resizeAspectFill
+        player.volume = 0
+        
         layer.addSublayer(playerLayer)
+        playerLayer.cornerRadius=40
+        playerLayer.masksToBounds = true
          
         // Create a new player looper with the queue player and template item
         playerLooper = AVPlayerLooper(player: player, templateItem: item)

@@ -47,6 +47,7 @@ struct ContentView: View {
                     .scaledToFill()
                     .frame(width: reader.size.width,
                     height: reader.size.height)
+                    .cornerRadius(40)
                     .clipped() //To clip the image content within its view's bounds
                 predictionLabels
             }
