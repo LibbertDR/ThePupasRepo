@@ -11,7 +11,7 @@ struct CardTemplate: View {
     
     var minWidth: CGFloat = 158
     var maxWidth: CGFloat = 199
-    var word: ListItem = ListItem(name: "Placeholder",
+    var word: ListItem = ListItem(name: NSLocalizedString("Placeholder", comment: ""),
                                   icon: "farfalla")
     
     var body: some View {

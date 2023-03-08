@@ -9,19 +9,19 @@ import Foundation
 
 //items of category "Home"
 let homeItems = [
-    ListItem(name: "Home", icon: "home")
+    ListItem(name: NSLocalizedString("Home", comment: ""), icon: "home")
 ]
 
 let animalsItem = [
-    ListItem(name: "Bird", icon: "piccione"),
-    ListItem(name: "Butterfly", icon: "farfalla"),
-    ListItem(name: "Chinchilla", icon: "topo"),
-    ListItem(name: "Crane", icon: "gru"),
-    ListItem(name: "Elephant", icon: "elefante"),
-    ListItem(name: "Fish", icon: "pesce"),
-    ListItem(name: "Fox", icon: "volpe"),
-    ListItem(name: "Frog", icon: "rana"),
-    ListItem(name: "Kangaroo", icon: "canguro"),
-    ListItem(name: "Rabbit", icon: "coniglio"),
-    ListItem(name: "Squirrel", icon: "scoiattolo"),
+    ListItem(name: NSLocalizedString("Bird", comment: ""), icon: "piccione"),
+    ListItem(name: NSLocalizedString("Butterfly", comment: ""), icon: "farfalla"),
+    ListItem(name: NSLocalizedString("Chinchilla", comment: ""), icon: "topo"),
+    ListItem(name: NSLocalizedString("Crane", comment: ""), icon: "gru"),
+    ListItem(name: NSLocalizedString("Elephant", comment: ""), icon: "elefante"),
+    ListItem(name: NSLocalizedString("Fish", comment: ""), icon: "pesce"),
+    ListItem(name: NSLocalizedString("Fox", comment: ""), icon: "volpe"),
+    ListItem(name: NSLocalizedString("Frog", comment: ""), icon: "rana"),
+    ListItem(name: NSLocalizedString("Kangaroo", comment: ""), icon: "canguro"),
+    ListItem(name: NSLocalizedString("Rabbit", comment: ""), icon: "coniglio"),
+    ListItem(name: NSLocalizedString("Squirrel", comment: ""), icon: "scoiattolo"),
 ]

@@ -13,6 +13,8 @@ struct MainView: View {
  
     private var dataModel = SideBarItems()
     
+    let stringCategories : LocalizedStringKey = "Categories"
+    let stringSelection : LocalizedStringKey = "Please select a category"
     
     var body: some View {
         NavigationSplitView {
@@ -20,7 +22,7 @@ struct MainView: View {
                 Label(item.name, systemImage: item.icon)
                  }
                  .listStyle(SidebarListStyle())
-                 .navigationTitle("Categories")
+                 .navigationTitle(stringCategories)
         } detail: {
             if let selectedCategoryId,
                let categoryItems = dataModel.fetchSubMenuItems(for: selectedCategoryId) {
@@ -38,7 +40,7 @@ struct MainView: View {
                 }
              
                         } else {
-                            Text("Please select a category")
+                            Text(stringSelection)
                         }
         }
 

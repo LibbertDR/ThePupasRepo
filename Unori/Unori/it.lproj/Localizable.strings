@@ -1,0 +1,30 @@
+/* 
+  Localizable.strings
+  Unori
+
+  Created by Alberto Di Ronza on 08/03/23.
+  
+*/
+
+"Categories" = "Categorie";
+"Animals" = "Animali";
+"Buildings" = "Edifici";
+
+//CONTENT VIEW
+"Please select a category" = "Per favore, seleziona una categoria";
+
+"Home" = "Casa";
+"Bird" = "Uccello";
+"Crane" = "Gru";
+"Chinchilla" = "Chinchilla";
+"Butterfly" = "Farfalla";
+"Elephant" = "Elefante";
+"Fish" = "Pesce";
+"Squirrel" = "Scoiattolo";
+"Fox" = "Volpe";
+"Frog" = "Rana";
+"Rabbit" = "Coniglio";
+"Kangaroo" = "Canguro";
+
+"Slow" = "Rallentato";
+"Normal" = "Normale";

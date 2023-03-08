@@ -13,8 +13,8 @@ struct SideBarItems{
         //Categories
         let categories = [
  //           ListItem(name: "Action", icon: "figure.run"),
-            ListItem(name: "Animals", icon: "pawprint.fill",itemChildren: animalsItem),
-            ListItem(name: "Home", icon: "house.fill", itemChildren: homeItems)
+            ListItem(name: NSLocalizedString("Animals", comment: ""), icon: "pawprint.fill",itemChildren: animalsItem),
+            ListItem(name: NSLocalizedString("Buildings", comment: ""), icon: "house.fill", itemChildren: homeItems)
             
         ]
         

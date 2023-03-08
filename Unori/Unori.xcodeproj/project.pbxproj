@@ -41,6 +41,7 @@
 		25E9092929B51872008A1C18 /* SideBarItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E9092829B51872008A1C18 /* SideBarItems.swift */; };
 		25E9092B29B51B0E008A1C18 /* CategoryItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E9092A29B51B0E008A1C18 /* CategoryItems.swift */; };
 		25E9092D29B521E9008A1C18 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E9092C29B521E9008A1C18 /* MainView.swift */; };
+		79A86C5029B89FCA00E4F49B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79A86C5229B89FCA00E4F49B /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +80,9 @@
 		25E9092829B51872008A1C18 /* SideBarItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarItems.swift; sourceTree = "<group>"; };
 		25E9092A29B51B0E008A1C18 /* CategoryItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItems.swift; sourceTree = "<group>"; };
 		25E9092C29B521E9008A1C18 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		79A86C5129B89FCA00E4F49B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		79A86C5329B89FDD00E4F49B /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		79A86C5429B89FE300E4F49B /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,8 +125,9 @@
 				25E9092429B512D2008A1C18 /* Model */,
 				150D756D29B212D80016F701 /* ViewModel */,
 				150D756F29B212D80016F701 /* Views */,
-				150D759929B640780016F701 /* Assets.xcassets */,
 				150D754D29B211B70016F701 /* Preview Content */,
+				150D759929B640780016F701 /* Assets.xcassets */,
+				79A86C5229B89FCA00E4F49B /* Localizable.strings */,
 			);
 			path = Unori;
 			sourceTree = "<group>";
@@ -255,6 +260,8 @@
 			knownRegions = (
 				en,
 				Base,
+				it,
+				"pt-BR",
 			);
 			mainGroup = 150D753B29B211B60016F701;
 			productRefGroup = 150D754529B211B60016F701 /* Products */;
@@ -272,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				150D759A29B640780016F701 /* Assets.xcassets in Resources */,
+				79A86C5029B89FCA00E4F49B /* Localizable.strings in Resources */,
 				256FC13929B7ECEE004AF3FB /* casa.mov in Resources */,
 				150D754F29B211B70016F701 /* Preview Assets.xcassets in Resources */,
 			);
@@ -322,11 +330,25 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		79A86C5229B89FCA00E4F49B /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79A86C5129B89FCA00E4F49B /* en */,
+				79A86C5329B89FDD00E4F49B /* it */,
+				79A86C5429B89FE300E4F49B /* pt-BR */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		150D755029B211B70016F701 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -387,6 +409,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -445,7 +468,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Unori/Preview Content\"";
-				DEVELOPMENT_TEAM = 5UR998JK72;
+				DEVELOPMENT_TEAM = G7CZ577JT2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Unori;
@@ -481,7 +504,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Unori/Preview Content\"";
-				DEVELOPMENT_TEAM = 5UR998JK72;
+				DEVELOPMENT_TEAM = G7CZ577JT2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Unori;

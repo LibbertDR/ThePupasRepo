@@ -10,7 +10,7 @@ import SwiftUI
 struct CardView_SplitCameraView: View {
     var chosenWord: ListItem
     @State var isNormalSpeed = false
-    @State var text = "Slow"
+    @State var text : LocalizedStringKey = "Slow"
     var body: some View {
         HStack{
             VStack {
@@ -55,6 +55,6 @@ struct CardView_SplitCameraView: View {
 
 struct CardView_SplitCameraView_Previews: PreviewProvider {
     static var previews: some View {
-        CardView_SplitCameraView(chosenWord: ListItem(name: "Placeholder", icon: "farfalla"))
+        CardView_SplitCameraView(chosenWord: ListItem(name: NSLocalizedString("Placeholder", comment: ""), icon: "farfalla"))
     }
 }
