@@ -11,7 +11,7 @@ struct SplitCameraView: View {
     var body: some View {
         GeometryReader { reader in
             
-                HStack{
+            HStack(spacing: 3){
                     TutorialView_Bounds()
                     CameraView()
                 }.frame(width: reader.size.width, height: reader.size.height)

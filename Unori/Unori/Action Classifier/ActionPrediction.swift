@@ -41,7 +41,7 @@ extension ActionPrediction {
     /// action classifier model.
     private enum AppLabel: String {
         case starting = "Starting Up"
-        case noPerson = "No Person"
+        case noPerson = "Frame the whole body"
         case lowConfidence = "Low Confidence"
     }
 

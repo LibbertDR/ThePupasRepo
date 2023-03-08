@@ -15,6 +15,7 @@ struct TutorialView_Bounds: View {
                     .overlay(
                         RoundedRectangle(cornerRadius: 40)
                             .stroke(Color("AccentColor"), lineWidth: 3)
+                            
                     )
             }
         }
